@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+  background-color: #e1e5e9;
+  border: 1px solid #9da4ab;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  min-width: 50%;
+
+  & .text {
+    font-size: 16px;
+    color: #444444;
+  }
+
+  & .sendBlock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & .input {
+      height: 40px;
+      width: 100%;
+      border: 1px solid rgb(195 195 195);
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+
+    & .btn {
+      height: 40px;
+      padding: 0 20px;
+      border: 1px solid rgb(195 195 195);
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  & .error {
+    font-size: 15px;
+    color: #d3160b;
+  }
+}
